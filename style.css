@@ -115,20 +115,33 @@ svg {
 	&.open {
 		transition: 1s;
 
-		.menu ul li {
+		.menu {
+			ul li {
 
-			button {
-	
-				svg {
-					flex-shrink: 0;
+				button {
+
+					svg {
+						flex-shrink: 0;
+					}
+
+					span {
+						opacity: 1;
+						transition: opacity 2s;
+					}
 				}
+			}
 
-				span {
-					opacity: 1;
-					transition: opacity 2s;
+			.separator {
+
+				.dashed-line {
+					opacity: 0;
 				}
 			}
 		}
+
+
+
+
 
 
 		.logo {
@@ -150,7 +163,7 @@ svg {
 		width: 86px;
 
 		.logo {
-			padding-inline: 30px;
+			padding-inline: 27px;
 			transition: 300ms;
 		}
 
@@ -180,6 +193,17 @@ svg {
 				}
 			}
 		}
+
+		.separator {
+
+			.dashed-line {
+				padding-left: 5px;
+			}
+
+			b {
+				opacity: 0;
+			}
+		}
 	}
 
 
@@ -189,17 +213,22 @@ svg {
 		gap: 7px;
 		padding-left: 15px;
 		margin-bottom: 40px;
-		
+
 
 		h1 {
 			font-weight: 500;
 			font-size: 18px;
 			color: #392c72;
 		}
+
+		#sidebar-toggle {
+			position: fixed;
+		}
 	}
 
 
 	.menu {
+
 
 		ul {
 			margin-bottom: 30px;
@@ -223,6 +252,49 @@ svg {
 					background-color: #9E8CFC;
 					box-shadow: 0 0 20px 0 rgba(158, 140, 252, 0.7);
 				}
+			}
+		}
+
+		.separator {
+			padding-left: 15px;
+			display: grid;
+			align-items: center;
+
+			.dashed-line {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				grid-area: 1/1;
+				transition: 800ms;
+				opacity: 1;
+
+
+				.dot,
+				.dash {
+					height: 5px;
+					background-color: #9E8CFC;
+				}
+
+				.dot {
+					width: 10px;
+					border-radius: 10px;
+				}
+
+				.dash {
+					width: 15px;
+					border-radius: 10px;
+				}
+			}
+
+			b {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #828282;
+				transition: 800ms;
+				grid-area: 1/1;
+				white-space: nowrap;
 			}
 		}
 	}
