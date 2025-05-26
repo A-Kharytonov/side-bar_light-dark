@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Dashboard</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<aside class="side-bar">
+
+			<div class="logo">
+				<img src="images/aside/logo.svg" alt="">
+				<h1>LightBoard</h1>
+				<button id="sidebar-toggle">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect width="20" height="20" rx="10" fill="white" />
+						<path
+							d="M11.0417 10L8.64375 7.38958C8.43958 7.18333 8.43958 6.84896 8.64375 6.64167C8.84792 6.43646 9.18021 6.43646 9.38333 6.64167L12.3073 9.625C12.5115 9.83229 12.5115 10.1667 12.3073 10.3719L9.38333 13.3552C9.18021 13.5625 8.84792 13.5615 8.64375 13.3552C8.43958 13.15 8.43958 12.8156 8.64375 12.6083L11.0417 10ZM10 0C15.5229 0 20 4.47708 20 10C20 15.524 15.5229 20 10 20C4.47708 20 0 15.524 0 10C0 4.47708 4.47708 0 10 0ZM10 18.7021C14.8052 18.7021 18.7021 14.8062 18.7021 10C18.7021 5.19375 14.8052 1.29792 10 1.29792C5.19271 1.29792 1.29792 5.19375 1.29792 10C1.29792 14.8062 5.19271 18.7021 10 18.7021Z"
+							fill="#392C72"/>
+					</svg>
+				</button>
+			</div>
+
+			
+
+
+			<div class="menu">
+				<ul>
+					<li>
+						<button>
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_70)">
+									<path
+										d="M21.9375 4.05925L4.0625 4.0625C3.61319 4.0625 3.25 4.42244 3.25 4.87175V16.2467C3.25 16.6961 3.61319 17.0592 4.0625 17.0592H21.9375C22.3868 17.0592 22.75 16.6961 22.75 16.2467V4.87175C22.75 4.42244 22.3868 4.05925 21.9375 4.05925ZM21.9375 16.25H4.0625V4.87175H21.9375V16.25ZM23.5625 0.8125H2.4375C1.09119 0.8125 0 1.90287 0 3.25V19.5C0 20.8439 1.08713 21.9326 2.42937 21.9359H10.5625V22.9247L5.49087 23.5836C5.1285 23.6738 4.875 23.9988 4.875 24.3717C4.875 24.8211 5.23819 25.1842 5.6875 25.1842H20.3125C20.7618 25.1842 21.125 24.8211 21.125 24.3717C21.125 23.9988 20.8715 23.6738 20.5091 23.5828L15.4375 22.9247V21.9359H23.5706C24.9129 21.9326 26 20.8439 26 19.5V3.25C26 1.90287 24.908 0.8125 23.5625 0.8125ZM24.375 19.5C24.375 19.9477 24.0102 20.3125 23.5625 20.3125H2.4375C1.989 20.3125 1.625 19.9477 1.625 19.5V3.25C1.625 2.8015 1.989 2.4375 2.4375 2.4375H23.5625C24.0102 2.4375 24.375 2.8015 24.375 3.25V19.5Z"
+										fill="#4F4F4F" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_70">
+										<rect width="26" height="26" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							<span>Dashboard</span>
+						</button>
+					</li>
+				</ul>
+				
+				<!-- <li>
+						<button>
+							Apps
+						</button>
+					</li> -->
+				<ul>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_aside.svg#mail"></use>
+							</svg>
+							<span>Email</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_aside.svg#bubble"></use>
+							</svg>
+							<span>Chats</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite.svg#calendar"></use>
+							</svg>
+							<span>Calendar</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_aside.svg#news"></use>
+							</svg>
+							<span>News</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_aside.svg#study 1"></use>
+							</svg>
+							<span>Knowledge</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_aside.svg#stack"></use>
+							</svg>
+							<span>File manager</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_aside.svg#location"></use>
+							</svg>
+							<span>Leaflet Maps</span>
+						</button>
+					</li>
+				</ul>
+
+
+
+				<!-- <li>
+						<button>Auth pages</button>
+					</li> -->
+
+				<ul>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#profile"></use>
+							</svg>
+							<span>Profile</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#lock"></use>
+							</svg>
+							<span>Permissions</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#log-out"></use>
+							</svg>
+							<span>Log Out</span>
+						</button>
+					</li>
+				</ul>
+
+				<!-- <li>
+						<button>User Interface</button>
+					</li> -->
+
+				<ul>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#eye"></use>
+							</svg>
+							<span>Feather</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#wallet"></use>
+							</svg>
+							<span>Ecommerce</span>
+						</button>
+						<span>
+					</li></span>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#lab"></use>
+							</svg>
+							<span>Components</span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#page"></use>
+							</svg>
+							<span><span>Pages</span></span>
+						</button>
+					</li>
+					<li>
+						<button>
+							<svg class="icon">
+								<use xlink:href="images/sprite_menu.svg#pen"></use>
+							</svg>
+							<span>Editor</span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	<!-- </div> -->
+
+
+	<div class="main-content">
+			<header>
+					<div class="toolbar">
+						<ul>
+							<li>
+								<button>
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#mail"></use>
+									</svg>
+								</button>
+							</li>
+							<li>
+								<button>
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#bubble"></use>
+									</svg>
+								</button>
+							</li>
+							<li>
+								<button>
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#calendar"></use>
+									</svg>
+								</button>
+							</li>
+							<li>
+								<button>
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#star"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="settings-bar">
+						<div class="language">
+							<ul>
+								<li>
+									<a href=""><img src="images/header/lang-icon.svg" alt="">
+									</a>
+								</li>
+								<li><a href="">English</a></li>
+							</ul>
+						</div>
+						<div class="settings">
+							<ul>
+								<li>
+									<button>
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#change-theme"></use>
+										</svg>
+									</button>
+								</li>
+								<li>
+									<button>
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#search"></use>
+										</svg>
+									</button>
+								</li>
+								<li>
+									<button>
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#set"></use>
+										</svg>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="avatar">
+							<a href=""><img src="images/header/Avatar.svg" alt=""></a>
+						</div>
+					</div>
+			</header>
+			<main>
+				<img src="images/main/bg.png" alt="">
+			</main>
+		</div>
+
+	</div>
+</body>
+
+</html>
