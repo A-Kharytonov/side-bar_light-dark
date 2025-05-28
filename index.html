@@ -15,7 +15,7 @@
 	<script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="dark">
 
 	<div class="container">
 
@@ -25,28 +25,27 @@
 				<img src="images/aside/logo.svg" alt="">
 				<h1>LightBoard</h1>
 				<button id="sidebar-toggle">
-					<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="20" height="20" rx="10" fill="white" />
 						<path
 							d="M11.0417 10L8.64375 7.38958C8.43958 7.18333 8.43958 6.84896 8.64375 6.64167C8.84792 6.43646 9.18021 6.43646 9.38333 6.64167L12.3073 9.625C12.5115 9.83229 12.5115 10.1667 12.3073 10.3719L9.38333 13.3552C9.18021 13.5625 8.84792 13.5615 8.64375 13.3552C8.43958 13.15 8.43958 12.8156 8.64375 12.6083L11.0417 10ZM10 0C15.5229 0 20 4.47708 20 10C20 15.524 15.5229 20 10 20C4.47708 20 0 15.524 0 10C0 4.47708 4.47708 0 10 0ZM10 18.7021C14.8052 18.7021 18.7021 14.8062 18.7021 10C18.7021 5.19375 14.8052 1.29792 10 1.29792C5.19271 1.29792 1.29792 5.19375 1.29792 10C1.29792 14.8062 5.19271 18.7021 10 18.7021Z"
-							fill="#392C72"/>
+							fill="#392C72" />
 					</svg>
 				</button>
 			</div>
 
-			
+
 
 
 			<div class="menu">
 				<ul>
 					<li>
 						<button>
-							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg class="dashboard" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0_1_70)">
 									<path
 										d="M21.9375 4.05925L4.0625 4.0625C3.61319 4.0625 3.25 4.42244 3.25 4.87175V16.2467C3.25 16.6961 3.61319 17.0592 4.0625 17.0592H21.9375C22.3868 17.0592 22.75 16.6961 22.75 16.2467V4.87175C22.75 4.42244 22.3868 4.05925 21.9375 4.05925ZM21.9375 16.25H4.0625V4.87175H21.9375V16.25ZM23.5625 0.8125H2.4375C1.09119 0.8125 0 1.90287 0 3.25V19.5C0 20.8439 1.08713 21.9326 2.42937 21.9359H10.5625V22.9247L5.49087 23.5836C5.1285 23.6738 4.875 23.9988 4.875 24.3717C4.875 24.8211 5.23819 25.1842 5.6875 25.1842H20.3125C20.7618 25.1842 21.125 24.8211 21.125 24.3717C21.125 23.9988 20.8715 23.6738 20.5091 23.5828L15.4375 22.9247V21.9359H23.5706C24.9129 21.9326 26 20.8439 26 19.5V3.25C26 1.90287 24.908 0.8125 23.5625 0.8125ZM24.375 19.5C24.375 19.9477 24.0102 20.3125 23.5625 20.3125H2.4375C1.989 20.3125 1.625 19.9477 1.625 19.5V3.25C1.625 2.8015 1.989 2.4375 2.4375 2.4375H23.5625C24.0102 2.4375 24.375 2.8015 24.375 3.25V19.5Z"
-										fill="#4F4F4F" />
+										fill="currentColor" />
 								</g>
 								<defs>
 									<clipPath id="clip0_1_70">
@@ -58,14 +57,14 @@
 						</button>
 					</li>
 				</ul>
-				
+
 				<div class="separator">
 					<div class="dashed-line">
 						<div class="dot"></div>
 						<div class="dash"></div>
 						<div class="dot"></div>
 					</div>
-           <b>Apps</b>
+					<b>Apps</b>
 				</div>
 
 				<ul>
@@ -135,7 +134,7 @@
 						<div class="dash"></div>
 						<div class="dot"></div>
 					</div>
-           <b>Auth pages</b>
+					<b>Auth pages</b>
 				</div>
 
 				<ul>
@@ -171,7 +170,7 @@
 						<div class="dash"></div>
 						<div class="dot"></div>
 					</div>
-           <b>User Interface</b>
+					<b>User Interface</b>
 				</div>
 
 				<ul>
@@ -219,82 +218,85 @@
 				</ul>
 			</div>
 		</aside>
-	<!-- </div> -->
+		<!-- </div> -->
 
 
-	<div class="main-content">
+		<div class="main-content">
 			<header>
-					<div class="toolbar">
+				<div class="toolbar">
+					<ul>
+						<li>
+							<button>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#mail"></use>
+								</svg>
+							</button>
+						</li>
+						<li>
+							<button>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#bubble"></use>
+								</svg>
+							</button>
+						</li>
+						<li>
+							<button>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#calendar"></use>
+								</svg>
+							</button>
+						</li>
+						<li>
+							<button>
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#star"></use>
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="settings-bar">
+					
+					<div class="language">
 						<ul>
 							<li>
-								<button>
+								<a href=""><img src="images/header/lang-icon.svg" alt="">
+								</a>
+							</li>
+							<li><a href="">English</a></li>
+						</ul>
+					</div>
+
+					<div class="settings">
+						<ul>
+							<li>
+								<button id="theme-toggle">
 									<svg class="icon">
-										<use xlink:href="images/sprite.svg#mail"></use>
+										<use xlink:href="images/sprite.svg#change-theme"></use>
 									</svg>
 								</button>
 							</li>
 							<li>
 								<button>
 									<svg class="icon">
-										<use xlink:href="images/sprite.svg#bubble"></use>
+										<use xlink:href="images/sprite.svg#search"></use>
 									</svg>
 								</button>
 							</li>
 							<li>
 								<button>
 									<svg class="icon">
-										<use xlink:href="images/sprite.svg#calendar"></use>
-									</svg>
-								</button>
-							</li>
-							<li>
-								<button>
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#star"></use>
+										<use xlink:href="images/sprite.svg#set"></use>
 									</svg>
 								</button>
 							</li>
 						</ul>
 					</div>
-					<div class="settings-bar">
-						<div class="language">
-							<ul>
-								<li>
-									<a href=""><img src="images/header/lang-icon.svg" alt="">
-									</a>
-								</li>
-								<li><a href="">English</a></li>
-							</ul>
-						</div>
-						<div class="settings">
-							<ul>
-								<li>
-									<button>
-										<svg class="icon">
-											<use xlink:href="images/sprite.svg#change-theme"></use>
-										</svg>
-									</button>
-								</li>
-								<li>
-									<button>
-										<svg class="icon">
-											<use xlink:href="images/sprite.svg#search"></use>
-										</svg>
-									</button>
-								</li>
-								<li>
-									<button>
-										<svg class="icon">
-											<use xlink:href="images/sprite.svg#set"></use>
-										</svg>
-									</button>
-								</li>
-							</ul>
-						</div>
-						<div class="avatar">
-							<a href=""><img src="images/header/Avatar.svg" alt=""></a>
-						</div>
+					<div class="avatar">
+						<a href=""><img src="images/header/Avatar.svg" alt=""></a>
 					</div>
+				</div>
 			</header>
 			<main>
 				<img src="images/main/bg.png" alt="">
